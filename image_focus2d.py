@@ -67,7 +67,7 @@ def DCTR(im):
 
 def GDER(im, s=3):
   # Gaussian derivative (Geusebroek2000)
-  fm = gaussian_filter(im, sigma=s)
+  fm = gaussian_filter(im, sigma=s, order=1)
   fm = fm.mean()
   return fm
 
